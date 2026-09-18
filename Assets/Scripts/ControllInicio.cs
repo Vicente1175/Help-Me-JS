@@ -16,7 +16,7 @@ public class NewMonoBehaviourScript : MonoBehaviour
     public void Play()
 {
 		// Cambia "NombreDeTuEscena" por el nombre exacto de tu escena
-		SceneManager.LoadScene("Cinematica1");
+		SceneManager.LoadScene("Actos");
 	}
 
 	public void Exit()
