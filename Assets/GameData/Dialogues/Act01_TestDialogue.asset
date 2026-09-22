@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ce34627539063d42b9e0eeb6cf9cb89, type: 3}
+  m_Name: Act01_TestDialogue
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueSequenceSO
+  lines:
+  - id: 
+    characterName: "Mam\xE1"
+    text: "\xBFOtra vez no pudiste dormir?"
+    expression: 
+    backgroundId: 
+    soundId: 
+    eventId: 
+    jumpToId: 
+  - id: 
+    characterName: "Mam\xE1"
+    text: Entonces hoy tienes que descansar un poco.
+    expression: 
+    backgroundId: Casa_Dia
+    soundId: 
+    eventId: PruebaEvento
+    jumpToId: 
+  - id: 
+    characterName: Protagonista
+    text: "No... me qued\xE9 despierto casi toda la noche."
+    expression: 
+    backgroundId: Casa_Noche
+    soundId: 
+    eventId: 
+    jumpToId: 

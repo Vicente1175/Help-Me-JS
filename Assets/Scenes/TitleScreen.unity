@@ -332,6 +332,7 @@ Transform:
   - {fileID: 260044961}
   - {fileID: 1375657260}
   - {fileID: 595892872}
+  - {fileID: 1910555660}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &335253169
@@ -1073,6 +1074,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1077842199}
+  - component: {fileID: 1077842200}
   m_Layer: 0
   m_Name: BackgroundSystem
   m_TagString: Untagged
@@ -1095,6 +1097,23 @@ Transform:
   m_Children: []
   m_Father: {fileID: 335253168}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1077842200
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1077842198}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1f9b9ddd567bee478f07e661ff45a34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BackgroundManager
+  backgrounds:
+  - id: Casa_Dia
+    sprite: {fileID: -6259593662684299752, guid: ff254893077ecc5479bc3af0324c43e1, type: 3}
+  - id: Casa_Noche
+    sprite: {fileID: -588417578457516785, guid: 87158689005084d49b83501a76d6053d, type: 3}
 --- !u!1 &1092245261
 GameObject:
   m_ObjectHideFlags: 0
@@ -1246,6 +1265,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1206479669}
+  - component: {fileID: 1206479670}
   m_Layer: 0
   m_Name: DialogueSystem
   m_TagString: Untagged
@@ -1268,6 +1288,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 335253168}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1206479670
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1206479668}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35a903e208d5b1a4da94de1eb77625ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueManager
 --- !u!1 &1269385305
 GameObject:
   m_ObjectHideFlags: 0
@@ -1529,6 +1561,50 @@ MonoBehaviour:
   emotionalWellbeing: 70
   energy: 70
   helpProgress: 0
+--- !u!1 &1910555659
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1910555660}
+  - component: {fileID: 1910555661}
+  m_Layer: 0
+  m_Name: EventManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1910555660
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1910555659}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 335253168}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1910555661
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1910555659}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 172f19f896ef6e74e94bae27390b2317, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EventManager
 --- !u!1 &1975689978
 GameObject:
   m_ObjectHideFlags: 0
