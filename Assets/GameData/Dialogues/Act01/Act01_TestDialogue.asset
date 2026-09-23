@@ -18,7 +18,8 @@ MonoBehaviour:
     text: "\xBFOtra vez no pudiste dormir?"
     expression: 
     backgroundId: 
-    soundId: 
+    soundId: Clic
+    musicId: Playa
     eventId: 
     jumpToId: 
   - id: 
@@ -26,7 +27,8 @@ MonoBehaviour:
     text: Entonces hoy tienes que descansar un poco.
     expression: 
     backgroundId: Casa_Dia
-    soundId: 
+    soundId: Rayo
+    musicId: 
     eventId: PruebaEvento
     jumpToId: 
   - id: 
@@ -34,6 +36,7 @@ MonoBehaviour:
     text: "No... me qued\xE9 despierto casi toda la noche."
     expression: 
     backgroundId: Casa_Noche
-    soundId: 
+    soundId: Clic
+    musicId: Playa
     eventId: 
     jumpToId: 

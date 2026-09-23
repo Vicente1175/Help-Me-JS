@@ -105,14 +105,18 @@ public class DialogueManager : MonoBehaviour
 		// Future hooks:
 		if (!string.IsNullOrEmpty(line.backgroundId))
 			BackgroundManager.Instance.ChangeBackground(line.backgroundId);
-		// if (!string.IsNullOrEmpty(line.soundId))
-		//     AudioManager.Instance.PlaySFX(line.soundId);
+
+		if (!string.IsNullOrEmpty(line.soundId))
+			AudioManager.Instance.PlaySFX(line.soundId);
+
+		if (!string.IsNullOrEmpty(line.musicId))
+			AudioManager.Instance.PlayMusic(line.musicId);
 
 		if (!string.IsNullOrEmpty(line.eventId))
 			EventManager.Instance.Raise(line.eventId);
 
 		// if (!string.IsNullOrEmpty(line.expression))
-		//     CharacterController.Get(line.characterName)?.SetExpression(line.expression);CharacterController.Get(line.characterName)?.SetExpression(line.expression);
+		//     CharacterController.Get(line.characterName)?.SetExpression(line.expression);
 
 		if (dialogueUI != null)
 		{

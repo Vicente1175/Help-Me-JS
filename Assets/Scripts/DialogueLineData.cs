@@ -36,6 +36,10 @@ public class DialogueLineData
 			 "Se usará al conectar el AudioManager.")]
 	public string soundId;
 
+	[Tooltip("ID de la música de fondo. Vacío = mantiene la música actual. " +
+			 "Se usará al conectar el AudioManager.")]
+	public string musicId;
+
 	[Tooltip("ID de un evento de juego a disparar (ej. \"IniciarMinijuego01\"). " +
 			 "Vacío = ningún evento. Se usará al conectar el EventManager.")]
 	public string eventId;

@@ -56,7 +56,7 @@ public class BackgroundManager : MonoBehaviour
 		}
 		else
 		{
-			Debug.LogWarning("[BackgroundManager] No se encontró un objeto con el tag Background.");
+			backgroundRenderer = null;
 		}
 	}
 
