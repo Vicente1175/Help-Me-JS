@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dcda2a0d87a145242bb4a148d858c218, type: 3}
+  m_Name: Main_Character
+  m_EditorClassIdentifier: Assembly-CSharp::CharacterSO
+  characterId: Protagonista
+  characterName: Valentina
+  sprites:
+  - id: Normal
+    sprite: {fileID: 9095853184155359625, guid: 30d98c6a591ac8f41a53e5691fda0e67, type: 3}
+  - id: 
+    sprite: {fileID: 0}

@@ -1,0 +1,288 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ce34627539063d42b9e0eeb6cf9cb89, type: 3}
+  m_Name: Secuence_06
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueSequenceSO
+  lines:
+  - character: {fileID: 11400000, guid: 61f72e4213c52644380017b7699e7e8e, type: 2}
+    spriteId: 
+    characterPosition: 0
+    characterVisible: 0
+    text: (El reloj marca las 3:21 AM)
+    backgroundId: 
+    soundId: 
+    musicId: 
+    eventId: 
+  - character: {fileID: 11400000, guid: 61f72e4213c52644380017b7699e7e8e, type: 2}
+    spriteId: 
+    characterPosition: 0
+    characterVisible: 1
+    text: "Uy... ya pas\xF3 bastante tiempo"
+    backgroundId: 
+    soundId: 
+    musicId: 
+    eventId: 
+  - character: {fileID: 11400000, guid: 61f72e4213c52644380017b7699e7e8e, type: 2}
+    spriteId: 
+    characterPosition: 0
+    characterVisible: 1
+    text: "Ahora s\xED deber\xEDa dormir."
+    backgroundId: 
+    soundId: 
+    musicId: 
+    eventId: 
+  - character: {fileID: 11400000, guid: 61f72e4213c52644380017b7699e7e8e, type: 2}
+    spriteId: 
+    characterPosition: 0
+    characterVisible: 0
+    text: (Continua mirando el celular)
+    backgroundId: 
+    soundId: 
+    musicId: 
+    eventId: 
+  - character: {fileID: 11400000, guid: 61f72e4213c52644380017b7699e7e8e, type: 2}
+    spriteId: 
+    characterPosition: 0
+    characterVisible: 0
+    text: (El reloj marca las 3:47 AM)
+    backgroundId: 
+    soundId: 
+    musicId: 
+    eventId: 
+  - character: {fileID: 11400000, guid: 61f72e4213c52644380017b7699e7e8e, type: 2}
+    spriteId: 
+    characterPosition: 0
+    characterVisible: 1
+    text: No puede ser...
+    backgroundId: 
+    soundId: 
+    musicId: 
+    eventId: 
+  - character: {fileID: 11400000, guid: 61f72e4213c52644380017b7699e7e8e, type: 2}
+    spriteId: 
+    characterPosition: 0
+    characterVisible: 1
+    text: Tengo que levantarme temprano.
+    backgroundId: 
+    soundId: 
+    musicId: 
+    eventId: 
+  - character: {fileID: 11400000, guid: 61f72e4213c52644380017b7699e7e8e, type: 2}
+    spriteId: 
+    characterPosition: 0
+    characterVisible: 0
+    text: (Pasan los minutos mientras sigues revisando el celular)
+    backgroundId: 
+    soundId: 
+    musicId: 
+    eventId: 
+  - character: {fileID: 11400000, guid: 61f72e4213c52644380017b7699e7e8e, type: 2}
+    spriteId: 
+    characterPosition: 0
+    characterVisible: 0
+    text: 4:30 AM
+    backgroundId: 
+    soundId: 
+    musicId: 
+    eventId: 
+  - character: {fileID: 11400000, guid: 61f72e4213c52644380017b7699e7e8e, type: 2}
+    spriteId: 
+    characterPosition: 0
+    characterVisible: 0
+    text: BEEP BEEP BEEP
+    backgroundId: 
+    soundId: Alarma
+    musicId: "Ma\xF1ana"
+    eventId: 
+  - character: {fileID: 11400000, guid: 61f72e4213c52644380017b7699e7e8e, type: 2}
+    spriteId: 
+    characterPosition: 0
+    characterVisible: 1
+    text: "Agh... \xBFya?"
+    backgroundId: 
+    soundId: 
+    musicId: 
+    eventId: 
+  - character: {fileID: 11400000, guid: 61f72e4213c52644380017b7699e7e8e, type: 2}
+    spriteId: 
+    characterPosition: 0
+    characterVisible: 1
+    text: "Me qued\xE9 despierta otra vez... Sab\xEDa que esto iba a pasar."
+    backgroundId: 
+    soundId: 
+    musicId: 
+    eventId: 
+  - character: {fileID: 11400000, guid: 61f72e4213c52644380017b7699e7e8e, type: 2}
+    spriteId: 
+    characterPosition: 0
+    characterVisible: 1
+    text: "Dorm\xED... \xBFcu\xE1nto? Ni siquiera vale la pena contarlo."
+    backgroundId: 
+    soundId: 
+    musicId: 
+    eventId: 
+  - character: {fileID: 11400000, guid: 61f72e4213c52644380017b7699e7e8e, type: 2}
+    spriteId: 
+    characterPosition: 0
+    characterVisible: 1
+    text: "Tengo que arreglarme o voy a llegar tarde. Hoy s\xED que voy a sobrevivir
+      con caf\xE9."
+    backgroundId: 
+    soundId: 
+    musicId: 
+    eventId: 
+  - character: {fileID: 11400000, guid: 61f72e4213c52644380017b7699e7e8e, type: 2}
+    spriteId: 
+    characterPosition: 0
+    characterVisible: 1
+    text: (Comienzas a preparate para salir)
+    backgroundId: 
+    soundId: 
+    musicId: 
+    eventId: 
+  - character: {fileID: 11400000, guid: 61f72e4213c52644380017b7699e7e8e, type: 2}
+    spriteId: 
+    characterPosition: 0
+    characterVisible: 1
+    text: No puedo ni mantener los ojos abiertos.
+    backgroundId: 
+    soundId: 
+    musicId: 
+    eventId: 
+  - character: {fileID: 11400000, guid: 61f72e4213c52644380017b7699e7e8e, type: 2}
+    spriteId: 
+    characterPosition: 0
+    characterVisible: 1
+    text: "\xBFPor qu\xE9 tengo tanto sue\xF1o si apenas me levant\xE9?"
+    backgroundId: 
+    soundId: 
+    musicId: 
+    eventId: 
+  - character: {fileID: 11400000, guid: 61f72e4213c52644380017b7699e7e8e, type: 2}
+    spriteId: 
+    characterPosition: 0
+    characterVisible: 1
+    text: Bueno... termino de arreglarme y ya. Cuando llegue al colegio seguro se
+      me pasa.
+    backgroundId: 
+    soundId: 
+    musicId: 
+    eventId: 
+  - character: {fileID: 11400000, guid: 61f72e4213c52644380017b7699e7e8e, type: 2}
+    spriteId: 
+    characterPosition: 0
+    characterVisible: 1
+    text: Necesito despertar de alguna manera.
+    backgroundId: 
+    soundId: 
+    musicId: 
+    eventId: 
+  - character: {fileID: 11400000, guid: 61f72e4213c52644380017b7699e7e8e, type: 2}
+    spriteId: 
+    characterPosition: 0
+    characterVisible: 1
+    text: "Pens\xE9 que ba\xF1arme me iba a ayudar, pero sigo igual."
+    backgroundId: 
+    soundId: 
+    musicId: 
+    eventId: 
+  - character: {fileID: 11400000, guid: 61f72e4213c52644380017b7699e7e8e, type: 2}
+    spriteId: 
+    characterPosition: 0
+    characterVisible: 1
+    text: "Esto va a ser un d\xEDa largu\xEDsimo."
+    backgroundId: 
+    soundId: 
+    musicId: 
+    eventId: 
+  - character: {fileID: 11400000, guid: 61f72e4213c52644380017b7699e7e8e, type: 2}
+    spriteId: 
+    characterPosition: 0
+    characterVisible: 0
+    text: "(Despu\xE9s de ba\xF1arte y vestirte vas a preparar tu mochila)"
+    backgroundId: 
+    soundId: 
+    musicId: 
+    eventId: 
+  - character: {fileID: 11400000, guid: 61f72e4213c52644380017b7699e7e8e, type: 2}
+    spriteId: 
+    characterPosition: 0
+    characterVisible: 1
+    text: A ver... cuaderno, estuche, botella...
+    backgroundId: 
+    soundId: 
+    musicId: 
+    eventId: 
+  - character: {fileID: 11400000, guid: 61f72e4213c52644380017b7699e7e8e, type: 2}
+    spriteId: 
+    characterPosition: 0
+    characterVisible: 1
+    text: "Espera, \xBFyo ten\xEDa tarea?"
+    backgroundId: 
+    soundId: 
+    musicId: 
+    eventId: 
+  - character: {fileID: 11400000, guid: 61f72e4213c52644380017b7699e7e8e, type: 2}
+    spriteId: 
+    characterPosition: 0
+    characterVisible: 1
+    text: No me acuerdo de haberla terminado.
+    backgroundId: 
+    soundId: 
+    musicId: 
+    eventId: 
+  - character: {fileID: 11400000, guid: 61f72e4213c52644380017b7699e7e8e, type: 2}
+    spriteId: 
+    characterPosition: 0
+    characterVisible: 1
+    text: "Despu\xE9s reviso. Si me pongo a buscar ahora, definitivamente voy a llegar
+      tarde."
+    backgroundId: 
+    soundId: 
+    musicId: 
+    eventId: 
+  - character: {fileID: 11400000, guid: 61f72e4213c52644380017b7699e7e8e, type: 2}
+    spriteId: 
+    characterPosition: 0
+    characterVisible: 0
+    text: "(Te detienes a mirarte en el espejo de tu habitaci\xF3n.)"
+    backgroundId: 
+    soundId: 
+    musicId: 
+    eventId: 
+  - character: {fileID: 11400000, guid: 61f72e4213c52644380017b7699e7e8e, type: 2}
+    spriteId: 
+    characterPosition: 0
+    characterVisible: 1
+    text: "Qu\xE9 horrible me veo..."
+    backgroundId: 
+    soundId: 
+    musicId: 
+    eventId: 
+  - character: {fileID: 11400000, guid: 61f72e4213c52644380017b7699e7e8e, type: 2}
+    spriteId: 
+    characterPosition: 0
+    characterVisible: 1
+    text: Tengo unas ojeras que parecen de una semana sin dormir.
+    backgroundId: 
+    soundId: 
+    musicId: 
+    eventId: 
+  - character: {fileID: 11400000, guid: 61f72e4213c52644380017b7699e7e8e, type: 2}
+    spriteId: 
+    characterPosition: 0
+    characterVisible: 1
+    text: "Bueno... ya qu\xE9. No puedo quedarme arregl\xE1ndome todo el d\xEDa."
+    backgroundId: 
+    soundId: 
+    musicId: 
+    eventId: 

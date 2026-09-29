@@ -1,0 +1,245 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ce34627539063d42b9e0eeb6cf9cb89, type: 3}
+  m_Name: Secuence_25
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueSequenceSO
+  lines:
+  - character: {fileID: 11400000, guid: 61f72e4213c52644380017b7699e7e8e, type: 2}
+    spriteId: 
+    characterPosition: 0
+    characterVisible: 0
+    text: (Deja el celular sobre el escritorio)
+    backgroundId: 
+    soundId: 
+    musicId: 
+    eventId: 
+  - character: {fileID: 11400000, guid: 61f72e4213c52644380017b7699e7e8e, type: 2}
+    spriteId: 
+    characterPosition: 0
+    characterVisible: 1
+    text: "Ya est\xE1"
+    backgroundId: 
+    soundId: 
+    musicId: 
+    eventId: 
+  - character: {fileID: 11400000, guid: 61f72e4213c52644380017b7699e7e8e, type: 2}
+    spriteId: 
+    characterPosition: 0
+    characterVisible: 1
+    text: No necesito seguir mirando la pantalla.
+    backgroundId: 
+    soundId: 
+    musicId: 
+    eventId: 
+  - character: {fileID: 11400000, guid: 61f72e4213c52644380017b7699e7e8e, type: 2}
+    spriteId: 
+    characterPosition: 0
+    characterVisible: 1
+    text: "Ma\xF1ana seguramente voy a tener sue\xF1o igual..."
+    backgroundId: 
+    soundId: 
+    musicId: 
+    eventId: 
+  - character: {fileID: 11400000, guid: 61f72e4213c52644380017b7699e7e8e, type: 2}
+    spriteId: 
+    characterPosition: 0
+    characterVisible: 1
+    text: Pero por lo menos no quiero repetir lo de ayer.
+    backgroundId: 
+    soundId: 
+    musicId: 
+    eventId: 
+  - character: {fileID: 11400000, guid: 61f72e4213c52644380017b7699e7e8e, type: 2}
+    spriteId: 
+    characterPosition: 0
+    characterVisible: 1
+    text: (Apaga la luz)
+    backgroundId: 
+    soundId: 
+    musicId: 
+    eventId: 
+  - character: {fileID: 11400000, guid: 61f72e4213c52644380017b7699e7e8e, type: 2}
+    spriteId: 
+    characterPosition: 0
+    characterVisible: 0
+    text: (Suena la alarma)
+    backgroundId: 
+    soundId: 
+    musicId: 
+    eventId: 
+  - character: {fileID: 11400000, guid: 61f72e4213c52644380017b7699e7e8e, type: 2}
+    spriteId: 
+    characterPosition: 0
+    characterVisible: 1
+    text: Mmm...
+    backgroundId: 
+    soundId: 
+    musicId: 
+    eventId: 
+  - character: {fileID: 11400000, guid: 61f72e4213c52644380017b7699e7e8e, type: 2}
+    spriteId: 
+    characterPosition: 0
+    characterVisible: 1
+    text: "Tengo sue\xF1o"
+    backgroundId: 
+    soundId: 
+    musicId: 
+    eventId: 
+  - character: {fileID: 11400000, guid: 61f72e4213c52644380017b7699e7e8e, type: 2}
+    spriteId: 
+    characterPosition: 0
+    characterVisible: 1
+    text: 'Pero...
+
+      No me siento tan mal como ayer.'
+    backgroundId: 
+    soundId: 
+    musicId: 
+    eventId: 
+  - character: {fileID: 11400000, guid: 61f72e4213c52644380017b7699e7e8e, type: 2}
+    spriteId: 
+    characterPosition: 0
+    characterVisible: 0
+    text: (Mira el reloj)
+    backgroundId: 
+    soundId: 
+    musicId: 
+    eventId: 
+  - character: {fileID: 11400000, guid: 61f72e4213c52644380017b7699e7e8e, type: 2}
+    spriteId: 
+    characterPosition: 0
+    characterVisible: 1
+    text: "Dormi mucho m\xE1s"
+    backgroundId: 
+    soundId: 
+    musicId: 
+    eventId: 
+  - character: {fileID: 11400000, guid: 61f72e4213c52644380017b7699e7e8e, type: 2}
+    spriteId: 
+    characterPosition: 0
+    characterVisible: 1
+    text: Supongo que dejar el celular y preparar todo si hizo alguna diferencia.
+    backgroundId: 
+    soundId: 
+    musicId: 
+    eventId: 
+  - character: {fileID: 11400000, guid: 61f72e4213c52644380017b7699e7e8e, type: 2}
+    spriteId: 
+    characterPosition: 0
+    characterVisible: 1
+    text: "Aunque no significa que mi problema se haya solucionado, aun me cuesta
+      conciliar el sue\xF1o."
+    backgroundId: 
+    soundId: 
+    musicId: 
+    eventId: 
+  - character: {fileID: 11400000, guid: 61f72e4213c52644380017b7699e7e8e, type: 2}
+    spriteId: 
+    characterPosition: 0
+    characterVisible: 1
+    text: Pero almenos puedo seguir intentandolo.
+    backgroundId: 
+    soundId: 
+    musicId: 
+    eventId: 
+  - character: {fileID: 11400000, guid: 61f72e4213c52644380017b7699e7e8e, type: 2}
+    spriteId: 
+    characterPosition: 0
+    characterVisible: 0
+    text: (Te diriges a la cocina)
+    backgroundId: 
+    soundId: 
+    musicId: 
+    eventId: 
+  - character: {fileID: 11400000, guid: 61f72e4213c52644380017b7699e7e8e, type: 2}
+    spriteId: 
+    characterPosition: 0
+    characterVisible: 1
+    text: "Buenos d\xEDas, mam\xE1."
+    backgroundId: 
+    soundId: 
+    musicId: 
+    eventId: 
+  - character: {fileID: 11400000, guid: 8cdf67c25cea8a24896b077cfe03fe84, type: 2}
+    spriteId: 
+    characterPosition: 1
+    characterVisible: 1
+    text: "Buenos d\xEDas. \xBFDormiste bien?"
+    backgroundId: 
+    soundId: 
+    musicId: 
+    eventId: 
+  - character: {fileID: 11400000, guid: 61f72e4213c52644380017b7699e7e8e, type: 2}
+    spriteId: 
+    characterPosition: 0
+    characterVisible: 1
+    text: "M\xE1s o menos, pero mejor que ayer."
+    backgroundId: 
+    soundId: 
+    musicId: 
+    eventId: 
+  - character: {fileID: 11400000, guid: 8cdf67c25cea8a24896b077cfe03fe84, type: 2}
+    spriteId: 
+    characterPosition: 1
+    characterVisible: 1
+    text: "\xBFDe verdad?"
+    backgroundId: 
+    soundId: 
+    musicId: 
+    eventId: 
+  - character: {fileID: 11400000, guid: 61f72e4213c52644380017b7699e7e8e, type: 2}
+    spriteId: 
+    characterPosition: 0
+    characterVisible: 1
+    text: "S\xED, creo que me estaba acostumbrando a dormir cada vez m\xE1s tarde."
+    backgroundId: 
+    soundId: 
+    musicId: 
+    eventId: 
+  - character: {fileID: 11400000, guid: 8cdf67c25cea8a24896b077cfe03fe84, type: 2}
+    spriteId: 
+    characterPosition: 1
+    characterVisible: 1
+    text: "Me alegra.\nLo m\xE1s importante es que te diste cuenta."
+    backgroundId: 
+    soundId: 
+    musicId: 
+    eventId: 
+  - character: {fileID: 11400000, guid: 61f72e4213c52644380017b7699e7e8e, type: 2}
+    spriteId: 
+    characterPosition: 0
+    characterVisible: 1
+    text: "S\xED...\r\nY creo que quiero seguir intentando cambiarlo.\r\n"
+    backgroundId: 
+    soundId: 
+    musicId: 
+    eventId: 
+  - character: {fileID: 11400000, guid: 8cdf67c25cea8a24896b077cfe03fe84, type: 2}
+    spriteId: 
+    characterPosition: 1
+    characterVisible: 1
+    text: 'Recuerda que no puedes cambiar todo de una vez.
+
+'
+    backgroundId: 
+    soundId: 
+    musicId: 
+    eventId: 
+  - character: {fileID: 11400000, guid: 61f72e4213c52644380017b7699e7e8e, type: 2}
+    spriteId: 
+    characterPosition: 0
+    characterVisible: 1
+    text: "Lo s\xE9.\r\nSupongo que puedo empezar por cosas peque\xF1as.\r\n"
+    backgroundId: 
+    soundId: 
+    musicId: 
+    eventId: 

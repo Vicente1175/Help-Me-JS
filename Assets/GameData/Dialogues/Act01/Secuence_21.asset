@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ce34627539063d42b9e0eeb6cf9cb89, type: 3}
+  m_Name: Secuence_21
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueSequenceSO
+  lines:
+  - character: {fileID: 11400000, guid: 61f72e4213c52644380017b7699e7e8e, type: 2}
+    spriteId: 
+    characterPosition: 0
+    characterVisible: 0
+    text: "Te dej\xE9 el almuerzo listo. Hoy tuve que quedarme un poco m\xE1s por
+      las horas extras. Te dej\xE9 tambi\xE9n la cena en la nevera para que solo
+      tengas que calentarla. Te amo. Nos vemos m\xE1s tarde. \u2764\uFE0F"
+    backgroundId: 
+    soundId: 
+    musicId: 
+    eventId: 
+  - character: {fileID: 11400000, guid: 61f72e4213c52644380017b7699e7e8e, type: 2}
+    spriteId: 
+    characterPosition: 0
+    characterVisible: 1
+    text: Supongo que hoy tampoco vamos a coincidir mucho.
+    backgroundId: 
+    soundId: 
+    musicId: 
+    eventId: 

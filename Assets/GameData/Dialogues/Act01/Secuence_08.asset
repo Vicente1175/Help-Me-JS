@@ -1,0 +1,108 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ce34627539063d42b9e0eeb6cf9cb89, type: 3}
+  m_Name: Secuence_08
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueSequenceSO
+  lines:
+  - character: {fileID: 11400000, guid: 61f72e4213c52644380017b7699e7e8e, type: 2}
+    spriteId: 
+    characterPosition: 0
+    characterVisible: 1
+    text: "Buenos d\xEDas, mam\xE1. Perd\xF3n por bajar as\xED, es que casi no dorm\xED."
+    backgroundId: 
+    soundId: 
+    musicId: 
+    eventId: 
+  - character: {fileID: 11400000, guid: 67b0d18a9dbe794428f9fdf6076e323f, type: 2}
+    spriteId: 
+    characterPosition: 1
+    characterVisible: 1
+    text: "Buenos d\xEDas hija. Ya me di cuenta. Tienes una cara de cansancio terrible."
+    backgroundId: 
+    soundId: 
+    musicId: 
+    eventId: 
+  - character: {fileID: 11400000, guid: 61f72e4213c52644380017b7699e7e8e, type: 2}
+    spriteId: 
+    characterPosition: 0
+    characterVisible: 1
+    text: "S\xED... anoche otra vez me qued\xE9 viendo videos y cuando mir\xE9 el
+      reloj ya era demasiado tarde."
+    backgroundId: 
+    soundId: 
+    musicId: 
+    eventId: 
+  - character: {fileID: 11400000, guid: 67b0d18a9dbe794428f9fdf6076e323f, type: 2}
+    spriteId: 
+    characterPosition: 1
+    characterVisible: 1
+    text: "Tienes que empezar a controlar eso. El celular puede esperar, pero t\xFA
+      necesitas dormir."
+    backgroundId: 
+    soundId: 
+    musicId: 
+    eventId: 
+  - character: {fileID: 11400000, guid: 61f72e4213c52644380017b7699e7e8e, type: 2}
+    spriteId: 
+    characterPosition: 0
+    characterVisible: 1
+    text: "S\xED, lo s\xE9. Siempre digo que voy a dejarlo y termino haciendo lo
+      mismo."
+    backgroundId: 
+    soundId: 
+    musicId: 
+    eventId: 
+  - character: {fileID: 11400000, guid: 67b0d18a9dbe794428f9fdf6076e323f, type: 2}
+    spriteId: 
+    characterPosition: 1
+    characterVisible: 1
+    text: Bueno, al menos hoy intenta descansar cuando llegues.
+    backgroundId: 
+    soundId: 
+    musicId: 
+    eventId: 
+  - character: {fileID: 11400000, guid: 61f72e4213c52644380017b7699e7e8e, type: 2}
+    spriteId: 
+    characterPosition: 0
+    characterVisible: 1
+    text: "S\xED. Hoy s\xED. Ya no quiero sentirme as\xED todo el d\xEDa."
+    backgroundId: 
+    soundId: 
+    musicId: 
+    eventId: 
+  - character: {fileID: 11400000, guid: 61f72e4213c52644380017b7699e7e8e, type: 2}
+    spriteId: 
+    characterPosition: 0
+    characterVisible: 1
+    text: "S\xED. Hoy s\xED. Ya no quiero sentirme as\xED todo el d\xEDa."
+    backgroundId: 
+    soundId: 
+    musicId: 
+    eventId: 
+  - character: {fileID: 11400000, guid: 67b0d18a9dbe794428f9fdf6076e323f, type: 2}
+    spriteId: 
+    characterPosition: 1
+    characterVisible: 1
+    text: Entonces come algo antes de irte.
+    backgroundId: 
+    soundId: 
+    musicId: 
+    eventId: 
+  - character: {fileID: 11400000, guid: 61f72e4213c52644380017b7699e7e8e, type: 2}
+    spriteId: 
+    characterPosition: 0
+    characterVisible: 1
+    text: "S\xED."
+    backgroundId: 
+    soundId: 
+    musicId: 
+    eventId: 

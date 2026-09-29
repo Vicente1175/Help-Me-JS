@@ -1,0 +1,226 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ce34627539063d42b9e0eeb6cf9cb89, type: 3}
+  m_Name: Secuence_12
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueSequenceSO
+  lines:
+  - character: {fileID: 11400000, guid: 61f72e4213c52644380017b7699e7e8e, type: 2}
+    spriteId: 
+    characterPosition: 0
+    characterVisible: 0
+    text: (Llegas al instituto)
+    backgroundId: 
+    soundId: 
+    musicId: 
+    eventId: 
+  - character: {fileID: 11400000, guid: 67b0d18a9dbe794428f9fdf6076e323f, type: 2}
+    spriteId: 
+    characterPosition: 1
+    characterVisible: 1
+    text: "Como vimos en la clase anterior, este tema es importante porque nos permite
+      comprender c\xF3mo se relacionan estos conceptos."
+    backgroundId: 
+    soundId: 
+    musicId: 
+    eventId: 
+  - character: {fileID: 11400000, guid: 61f72e4213c52644380017b7699e7e8e, type: 2}
+    spriteId: 
+    characterPosition: 0
+    characterVisible: 1
+    text: Si...
+    backgroundId: 
+    soundId: 
+    musicId: 
+    eventId: 
+  - character: {fileID: 11400000, guid: 67b0d18a9dbe794428f9fdf6076e323f, type: 2}
+    spriteId: 
+    characterPosition: 1
+    characterVisible: 1
+    text: Entonces, si tenemos en cuenta este concepto, podemos observar que...
+    backgroundId: 
+    soundId: 
+    musicId: 
+    eventId: 
+  - character: {fileID: 11400000, guid: 61f72e4213c52644380017b7699e7e8e, type: 2}
+    spriteId: 
+    characterPosition: 0
+    characterVisible: 0
+    text: "(Entredormida tratas de prestar atenci\xF3n)"
+    backgroundId: 
+    soundId: 
+    musicId: 
+    eventId: 
+  - character: {fileID: 11400000, guid: 61f72e4213c52644380017b7699e7e8e, type: 2}
+    spriteId: 
+    characterPosition: 0
+    characterVisible: 1
+    text: "\xBFQu\xE9 estaba diciendo?"
+    backgroundId: 
+    soundId: 
+    musicId: 
+    eventId: 
+  - character: {fileID: 11400000, guid: 67b0d18a9dbe794428f9fdf6076e323f, type: 2}
+    spriteId: 
+    characterPosition: 1
+    characterVisible: 1
+    text: Y por eso podemos concluir que...
+    backgroundId: 
+    soundId: 
+    musicId: 
+    eventId: 
+  - character: {fileID: 11400000, guid: 61f72e4213c52644380017b7699e7e8e, type: 2}
+    spriteId: 
+    characterPosition: 0
+    characterVisible: 1
+    text: No estoy entendiendo nada.
+    backgroundId: 
+    soundId: 
+    musicId: 
+    eventId: 
+  - character: {fileID: 11400000, guid: 61f72e4213c52644380017b7699e7e8e, type: 2}
+    spriteId: 
+    characterPosition: 0
+    characterVisible: 1
+    text: "Intento poner atenci\xF3n, pero siento que no puedo mantener los ojos
+      abiertos."
+    backgroundId: 
+    soundId: 
+    musicId: 
+    eventId: 
+  - character: {fileID: 11400000, guid: 61f72e4213c52644380017b7699e7e8e, type: 2}
+    spriteId: 
+    characterPosition: 0
+    characterVisible: 1
+    text: "Tengo demasiado sue\xF1o."
+    backgroundId: 
+    soundId: 
+    musicId: 
+    eventId: 
+  - character: {fileID: 11400000, guid: 61f72e4213c52644380017b7699e7e8e, type: 2}
+    spriteId: 
+    characterPosition: 0
+    characterVisible: 1
+    text: Solo voy a cerrar los ojos un segundo...
+    backgroundId: 
+    soundId: 
+    musicId: 
+    eventId: 
+  - character: {fileID: 11400000, guid: 672b8572fb27e4d43a55a4782920e11f, type: 2}
+    spriteId: 
+    characterPosition: 1
+    characterVisible: 1
+    text: "\xBFEst\xE1s bien? Te ves bastante cansada hoy."
+    backgroundId: 
+    soundId: 
+    musicId: 
+    eventId: 
+  - character: {fileID: 11400000, guid: 61f72e4213c52644380017b7699e7e8e, type: 2}
+    spriteId: 
+    characterPosition: 0
+    characterVisible: 1
+    text: "S\xED... estoy bien. Solo tengo un poco de sue\xF1o."
+    backgroundId: 
+    soundId: 
+    musicId: 
+    eventId: 
+  - character: {fileID: 11400000, guid: 672b8572fb27e4d43a55a4782920e11f, type: 2}
+    spriteId: 
+    characterPosition: 1
+    characterVisible: 1
+    text: "\xBFTe quedaste mirando el celular toda la noche de nuevo?"
+    backgroundId: 
+    soundId: 
+    musicId: 
+    eventId: 
+  - character: {fileID: 11400000, guid: 61f72e4213c52644380017b7699e7e8e, type: 2}
+    spriteId: 
+    characterPosition: 0
+    characterVisible: 1
+    text: "\xA1No!"
+    backgroundId: 
+    soundId: 
+    musicId: 
+    eventId: 
+  - character: {fileID: 11400000, guid: 672b8572fb27e4d43a55a4782920e11f, type: 2}
+    spriteId: 
+    characterPosition: 1
+    characterVisible: 1
+    text: "\xBFSegura? Porque tienes unas ojeras que dicen todo lo contrario."
+    backgroundId: 
+    soundId: 
+    musicId: 
+    eventId: 
+  - character: {fileID: 11400000, guid: 61f72e4213c52644380017b7699e7e8e, type: 2}
+    spriteId: 
+    characterPosition: 0
+    characterVisible: 1
+    text: Bueno...
+    backgroundId: 
+    soundId: 
+    musicId: 
+    eventId: 
+  - character: {fileID: 11400000, guid: 672b8572fb27e4d43a55a4782920e11f, type: 2}
+    spriteId: 
+    characterPosition: 1
+    characterVisible: 1
+    text: "Entonces s\xED estuviste despierta hasta tarde."
+    backgroundId: 
+    soundId: 
+    musicId: 
+    eventId: 
+  - character: {fileID: 11400000, guid: 61f72e4213c52644380017b7699e7e8e, type: 2}
+    spriteId: 
+    characterPosition: 0
+    characterVisible: 1
+    text: "Es que empec\xE9 a ver unos videos y despu\xE9s se me hizo tarde. Cuando
+      quise dormir ya ten\xEDa que levantarme."
+    backgroundId: 
+    soundId: 
+    musicId: 
+    eventId: 
+  - character: {fileID: 11400000, guid: 672b8572fb27e4d43a55a4782920e11f, type: 2}
+    spriteId: 
+    characterPosition: 1
+    characterVisible: 1
+    text: "Pues duerme bien una vez, tampoco te va a hacer da\xF1o. No puedes seguir
+      llegando as\xED a clase."
+    backgroundId: 
+    soundId: 
+    musicId: 
+    eventId: 
+  - character: {fileID: 11400000, guid: 61f72e4213c52644380017b7699e7e8e, type: 2}
+    spriteId: 
+    characterPosition: 0
+    characterVisible: 1
+    text: "S\xED...\nHoy s\xED."
+    backgroundId: 
+    soundId: 
+    musicId: 
+    eventId: 
+  - character: {fileID: 11400000, guid: 672b8572fb27e4d43a55a4782920e11f, type: 2}
+    spriteId: 
+    characterPosition: 1
+    characterVisible: 1
+    text: "\xBFQuieres venir conmigo al recreo?"
+    backgroundId: 
+    soundId: 
+    musicId: 
+    eventId: 
+  - character: {fileID: 11400000, guid: 61f72e4213c52644380017b7699e7e8e, type: 2}
+    spriteId: 
+    characterPosition: 0
+    characterVisible: 1
+    text: "No s\xE9..."
+    backgroundId: 
+    soundId: 
+    musicId: 
+    eventId: 

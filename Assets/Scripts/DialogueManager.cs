@@ -1,7 +1,5 @@
-
 using System;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class DialogueManager : MonoBehaviour
 {
@@ -14,7 +12,7 @@ public class DialogueManager : MonoBehaviour
 	public event Action<DialogueLineData> OnLineStarted;
 	public event Action OnSequenceCompleted;
 
-	void Awake()
+	private void Awake()
 	{
 		if (Instance != null && Instance != this)
 		{
@@ -23,28 +21,11 @@ public class DialogueManager : MonoBehaviour
 		}
 
 		Instance = this;
-
-		SceneManager.sceneLoaded += OnSceneLoaded;
 	}
 
 	private void Start()
 	{
 		FindDialogueUI();
-	}
-
-	private void OnDestroy()
-	{
-		SceneManager.sceneLoaded -= OnSceneLoaded;
-	}
-
-	private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
-	{
-		FindDialogueUI();
-
-		if (dialogueUI != null && dialogueUI.startingSequence != null)
-		{
-			PlaySequence(dialogueUI.startingSequence);
-		}
 	}
 
 	private void FindDialogueUI()
@@ -56,7 +37,10 @@ public class DialogueManager : MonoBehaviour
 	{
 		if (sequence == null || sequence.lines.Count == 0)
 		{
-			Debug.LogWarning("[DialogueManager] Se intentó reproducir una secuencia vacía o nula.");
+			Debug.LogWarning(
+				"[DialogueManager] Se intentó reproducir una secuencia vacía o nula."
+			);
+
 			return;
 		}
 
@@ -70,19 +54,16 @@ public class DialogueManager : MonoBehaviour
 
 	public void Advance()
 	{
-		if (currentSequence == null) return;
-
-		DialogueLineData current = currentSequence.GetLineAt(currentIndex);
-
-		if (current != null && !string.IsNullOrEmpty(current.jumpToId))
+		if (currentSequence == null)
 		{
-			int jumpIndex = currentSequence.GetIndexById(current.jumpToId);
-			currentIndex = jumpIndex >= 0 ? jumpIndex : currentIndex + 1;
+			Debug.LogWarning(
+				"[DialogueManager] No hay una secuencia activa."
+			);
+
+			return;
 		}
-		else
-		{
-			currentIndex++;
-		}
+
+		currentIndex++;
 
 		if (currentIndex >= currentSequence.lines.Count)
 		{
@@ -95,32 +76,62 @@ public class DialogueManager : MonoBehaviour
 
 	private void ShowCurrentLine()
 	{
-		DialogueLineData line = currentSequence.GetLineAt(currentIndex);
+		DialogueLineData line =
+			currentSequence.GetLineAt(currentIndex);
+
 		if (line == null)
 		{
 			EndSequence();
 			return;
 		}
 
-		// Future hooks:
 		if (!string.IsNullOrEmpty(line.backgroundId))
-			BackgroundManager.Instance.ChangeBackground(line.backgroundId);
+		{
+			BackgroundManager.Instance.ChangeBackground(
+				line.backgroundId
+			);
+		}
 
 		if (!string.IsNullOrEmpty(line.soundId))
-			AudioManager.Instance.PlaySFX(line.soundId);
+		{
+			AudioManager.Instance.PlaySFX(
+				line.soundId
+			);
+		}
 
 		if (!string.IsNullOrEmpty(line.musicId))
-			AudioManager.Instance.PlayMusic(line.musicId);
+		{
+			AudioManager.Instance.PlayMusic(
+				line.musicId
+			);
+		}
 
 		if (!string.IsNullOrEmpty(line.eventId))
-			EventManager.Instance.Raise(line.eventId);
+		{
+			EventManager.Instance.Raise(
+				line.eventId
+			);
+		}
 
-		// if (!string.IsNullOrEmpty(line.expression))
-		//     CharacterController.Get(line.characterName)?.SetExpression(line.expression);
+		if (CharacterController.Instance != null)
+		{
+			CharacterController.Instance.ShowCharacter(
+				line.character,
+				line.spriteId,
+				line.characterPosition,
+				line.characterVisible
+			);
+		}
 
 		if (dialogueUI != null)
 		{
-			dialogueUI.ShowLine(line.characterName, line.text);
+			dialogueUI.ShowLine(
+				line.character != null
+					? line.character.characterName
+					: "",
+				line.text,
+				line.characterVisible
+			);
 		}
 
 		OnLineStarted?.Invoke(line);
@@ -133,9 +144,13 @@ public class DialogueManager : MonoBehaviour
 			dialogueUI.Hide();
 		}
 
-		OnSequenceCompleted?.Invoke();
+		// Primero limpiamos la secuencia anterior.
 		currentSequence = null;
 		currentIndex = -1;
+
+		// Después avisamos al GameScriptRunner.
+		// Esto permite que pueda iniciar la siguiente secuencia
+		// sin que la anterior la sobrescriba.
+		OnSequenceCompleted?.Invoke();
 	}
 }
-

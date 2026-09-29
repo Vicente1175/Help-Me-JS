@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a087628806101941952608588f1999e, type: 3}
+  m_Name: Choice_05A
+  m_EditorClassIdentifier: Assembly-CSharp::ChoiceNode
+  nodeId: Choice_05A
+  question: "\xBFQu\xE9 haces?"
+  options:
+  - optionText: Comer una comida completa
+    nextNodeId: Dialogue_15A
+    variable: 2
+    variableEffect: 15
+    helpProgress: 0
+  - optionText: Casi no comer
+    nextNodeId: Dialogue_16A
+    variable: 2
+    variableEffect: -15
+    helpProgress: 0

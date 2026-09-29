@@ -1,6 +1,7 @@
 using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class BackgroundManager : MonoBehaviour
 {
@@ -16,7 +17,7 @@ public class BackgroundManager : MonoBehaviour
 	[Header("Fondos disponibles")]
 	public BackgroundData[] backgrounds;
 
-	private SpriteRenderer backgroundRenderer;
+	private Image backgroundImage;
 
 	private void Awake()
 	{
@@ -36,27 +37,38 @@ public class BackgroundManager : MonoBehaviour
 		SceneManager.sceneLoaded -= OnSceneLoaded;
 	}
 
-	private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
-	{
-		FindBackgroundRenderer();
-	}
-
 	private void Start()
 	{
-		FindBackgroundRenderer();
+		FindBackgroundImage();
 	}
 
-	private void FindBackgroundRenderer()
+	private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
 	{
-		GameObject background = GameObject.FindGameObjectWithTag("Background");
+		FindBackgroundImage();
+	}
 
-		if (background != null)
+	private void FindBackgroundImage()
+	{
+		GameObject background =
+			GameObject.FindGameObjectWithTag("Background");
+
+		if (background == null)
 		{
-			backgroundRenderer = background.GetComponent<SpriteRenderer>();
+			Debug.LogWarning(
+				"[BackgroundManager] No se encontró ningún objeto con el Tag Background."
+			);
+
+			return;
 		}
-		else
+
+		backgroundImage =
+			background.GetComponent<Image>();
+
+		if (backgroundImage == null)
 		{
-			backgroundRenderer = null;
+			Debug.LogWarning(
+				"[BackgroundManager] El objeto Background no tiene componente Image."
+			);
 		}
 	}
 
@@ -65,20 +77,34 @@ public class BackgroundManager : MonoBehaviour
 		if (string.IsNullOrEmpty(backgroundId))
 			return;
 
-		if (backgroundRenderer == null)
+		if (backgroundImage == null)
 		{
-			FindBackgroundRenderer();
+			FindBackgroundImage();
+		}
+
+		if (backgroundImage == null)
+		{
+			Debug.LogWarning(
+				"[BackgroundManager] No se encontró el Image del Background."
+			);
+
+			return;
 		}
 
 		for (int i = 0; i < backgrounds.Length; i++)
 		{
 			if (backgrounds[i].id == backgroundId)
 			{
-				backgroundRenderer.sprite = backgrounds[i].sprite;
+				backgroundImage.sprite =
+					backgrounds[i].sprite;
+
 				return;
 			}
 		}
 
-		Debug.LogWarning("[BackgroundManager] No se encontró el fondo: " + backgroundId);
+		Debug.LogWarning(
+			"[BackgroundManager] No se encontró el fondo: " +
+			backgroundId
+		);
 	}
 }

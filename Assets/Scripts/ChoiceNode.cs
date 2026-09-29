@@ -2,8 +2,6 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-
-
 [CreateAssetMenu(fileName = "NewChoiceNode", menuName = "GameScript/Nodes/Choice Node")]
 public class ChoiceNode : GameScriptNode
 {
@@ -20,5 +18,16 @@ public class ChoiceOption
 
 	public string nextNodeId;
 
+	public StateVariable variable;
+
 	public int variableEffect;
+
+	public HelpProgressStage helpProgress = HelpProgressStage.None;
+}
+
+public enum StateVariable
+{
+	None,
+	EmotionalWellbeing,
+	Energy
 }

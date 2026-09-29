@@ -1,12 +1,13 @@
-using UnityEngine.InputSystem;
 using UnityEngine;
 using TMPro;
 using System.Collections;
+using UnityEngine.InputSystem;
 
 public class DialogueUI : MonoBehaviour
 {
 	[Header("Referencias UI")]
 	public GameObject dialoguePanel;
+	public GameObject speakerNameBackground;
 	public TMP_Text speakerNameText;
 	public TMP_Text dialogueText;
 
@@ -21,37 +22,63 @@ public class DialogueUI : MonoBehaviour
 	private string currentText;
 	private bool isTyping;
 
-	void Awake()
+	private void Awake()
 	{
 		Hide();
 	}
 
-	void Update()
+	private void Update()
 	{
-		if (dialoguePanel != null && dialoguePanel.activeSelf)
+		if (dialoguePanel == null || !dialoguePanel.activeSelf)
+			return;
+
+		if (Mouse.current != null &&
+			Mouse.current.leftButton.wasPressedThisFrame)
 		{
-			if (Mouse.current.leftButton.wasPressedThisFrame ||
-	Keyboard.current.spaceKey.wasPressedThisFrame)
-			{
-				if (isTyping)
-				{
-					FinishTyping();
-				}
-				else
-				{
-					DialogueManager.Instance.Advance();
-				}
-			}
+			Next();
+		}
+
+		if (Keyboard.current != null &&
+			Keyboard.current.spaceKey.wasPressedThisFrame)
+		{
+			Next();
 		}
 	}
 
-	public void ShowLine(string characterName, string text)
+	private void Next()
+	{
+		if (isTyping)
+		{
+			FinishTyping();
+			return;
+		}
+
+		if (DialogueManager.Instance != null)
+		{
+			DialogueManager.Instance.Advance();
+		}
+	}
+
+	public void ShowLine(
+		string characterName,
+		string text,
+		bool characterVisible)
 	{
 		if (dialoguePanel != null)
 			dialoguePanel.SetActive(true);
 
+		bool hasCharacter =
+			characterVisible &&
+			!string.IsNullOrEmpty(characterName);
+
+		if (speakerNameBackground != null)
+			speakerNameBackground.SetActive(hasCharacter);
+
 		if (speakerNameText != null)
+		{
+			speakerNameText.gameObject.SetActive(hasCharacter);
 			speakerNameText.text = characterName;
+		}
 
 		currentText = text;
 
@@ -91,6 +118,12 @@ public class DialogueUI : MonoBehaviour
 	{
 		if (dialoguePanel != null)
 			dialoguePanel.SetActive(false);
+
+		if (speakerNameBackground != null)
+			speakerNameBackground.SetActive(false);
+
+		if (speakerNameText != null)
+			speakerNameText.gameObject.SetActive(false);
 
 		if (typingCoroutine != null)
 			StopCoroutine(typingCoroutine);

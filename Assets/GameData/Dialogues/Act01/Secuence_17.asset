@@ -1,0 +1,221 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ce34627539063d42b9e0eeb6cf9cb89, type: 3}
+  m_Name: Secuence_17
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueSequenceSO
+  lines:
+  - character: {fileID: 11400000, guid: 61f72e4213c52644380017b7699e7e8e, type: 2}
+    spriteId: 
+    characterPosition: 0
+    characterVisible: 0
+    text: (Suena el timbre, continuan las clases y llega la hora de la salida)
+    backgroundId: 
+    soundId: 
+    musicId: 
+    eventId: 
+  - character: {fileID: 11400000, guid: 672b8572fb27e4d43a55a4782920e11f, type: 2}
+    spriteId: 
+    characterPosition: 1
+    characterVisible: 1
+    text: "Oigan, \xBFqu\xE9 era lo que hab\xEDa que hacer para ma\xF1ana?\r\n"
+    backgroundId: 
+    soundId: 
+    musicId: 
+    eventId: 
+  - character: {fileID: 11400000, guid: 631d09fe5cc209a419a51e8ac1952abc, type: 2}
+    spriteId: 
+    characterPosition: 0
+    characterVisible: 1
+    text: "\xBFLo de las tres preguntas?\r\n"
+    backgroundId: 
+    soundId: 
+    musicId: 
+    eventId: 
+  - character: {fileID: 11400000, guid: 672b8572fb27e4d43a55a4782920e11f, type: 2}
+    spriteId: 
+    characterPosition: 1
+    characterVisible: 1
+    text: "\xBFTres? Yo entend\xED cinco.\r\n"
+    backgroundId: 
+    soundId: 
+    musicId: 
+    eventId: 
+  - character: {fileID: 11400000, guid: 61f72e4213c52644380017b7699e7e8e, type: 2}
+    spriteId: 
+    characterPosition: 0
+    characterVisible: 0
+    text: (Te voltean a mirar)
+    backgroundId: 
+    soundId: 
+    musicId: 
+    eventId: 
+  - character: {fileID: 11400000, guid: 631d09fe5cc209a419a51e8ac1952abc, type: 2}
+    spriteId: 
+    characterPosition: 1
+    characterVisible: 1
+    text: "T\xFA s\xED estabas poniendo atenci\xF3n, \xBFcierto?"
+    backgroundId: 
+    soundId: 
+    musicId: 
+    eventId: 
+  - character: {fileID: 11400000, guid: 61f72e4213c52644380017b7699e7e8e, type: 2}
+    spriteId: 
+    characterPosition: 0
+    characterVisible: 1
+    text: ...
+    backgroundId: 
+    soundId: 
+    musicId: 
+    eventId: 
+  - character: {fileID: 11400000, guid: 61f72e4213c52644380017b7699e7e8e, type: 2}
+    spriteId: 
+    characterPosition: 0
+    characterVisible: 1
+    text: 'Jajaja... Estoy igual de perdida que ustedes.
+
+'
+    backgroundId: 
+    soundId: 
+    musicId: 
+    eventId: 
+  - character: {fileID: 11400000, guid: 61f72e4213c52644380017b7699e7e8e, type: 2}
+    spriteId: 
+    characterPosition: 1
+    characterVisible: 0
+    text: (Se rien y se despiden)
+    backgroundId: 
+    soundId: 
+    musicId: 
+    eventId: 
+  - character: {fileID: 11400000, guid: 61f72e4213c52644380017b7699e7e8e, type: 2}
+    spriteId: 
+    characterPosition: 0
+    characterVisible: 0
+    text: (Te vas caminando a tu casa)
+    backgroundId: 
+    soundId: 
+    musicId: 
+    eventId: 
+  - character: {fileID: 11400000, guid: 61f72e4213c52644380017b7699e7e8e, type: 2}
+    spriteId: 
+    characterPosition: 0
+    characterVisible: 1
+    text: 'Tengo que llegar a casa...
+
+      Estoy demasiado cansada.
+
+'
+    backgroundId: 
+    soundId: 
+    musicId: 
+    eventId: 
+  - character: {fileID: 11400000, guid: 61f72e4213c52644380017b7699e7e8e, type: 2}
+    spriteId: 
+    characterPosition: 0
+    characterVisible: 1
+    text: Solo quiero llegar y acostarme un rato.
+    backgroundId: 
+    soundId: 
+    musicId: 
+    eventId: 
+  - character: {fileID: 11400000, guid: 61f72e4213c52644380017b7699e7e8e, type: 2}
+    spriteId: 
+    characterPosition: 0
+    characterVisible: 0
+    text: (Te dispones a cruzar la calle)
+    backgroundId: 
+    soundId: 
+    musicId: 
+    eventId: 
+  - character: {fileID: 11400000, guid: 61f72e4213c52644380017b7699e7e8e, type: 2}
+    spriteId: 
+    characterPosition: 0
+    characterVisible: 0
+    text: CHIIIIIIIIIIRRRRRRRR
+    backgroundId: 
+    soundId: 
+    musicId: 
+    eventId: 
+  - character: {fileID: 11400000, guid: aade25e9e0058504ba5d3e48c5b88d14, type: 2}
+    spriteId: 
+    characterPosition: 1
+    characterVisible: 1
+    text: "\xA1\xBFEst\xE1s bien?!\n\xBFTe lastimaste?"
+    backgroundId: 
+    soundId: 
+    musicId: 
+    eventId: 
+  - character: {fileID: 11400000, guid: 61f72e4213c52644380017b7699e7e8e, type: 2}
+    spriteId: 
+    characterPosition: 0
+    characterVisible: 1
+    text: ...
+    backgroundId: 
+    soundId: 
+    musicId: 
+    eventId: 
+  - character: {fileID: 11400000, guid: 61f72e4213c52644380017b7699e7e8e, type: 2}
+    spriteId: 
+    characterPosition: 0
+    characterVisible: 1
+    text: "S-s\xED...\r\nEstoy bien.\r\n"
+    backgroundId: 
+    soundId: 
+    musicId: 
+    eventId: 
+  - character: {fileID: 11400000, guid: aade25e9e0058504ba5d3e48c5b88d14, type: 2}
+    spriteId: 
+    characterPosition: 1
+    characterVisible: 1
+    text: 'Menos mal.
+
+'
+    backgroundId: 
+    soundId: 
+    musicId: 
+    eventId: 
+  - character: {fileID: 11400000, guid: aade25e9e0058504ba5d3e48c5b88d14, type: 2}
+    spriteId: 
+    characterPosition: 1
+    characterVisible: 1
+    text: "Me asust\xE9 cuando te vi cruzar as\xED."
+    backgroundId: 
+    soundId: 
+    musicId: 
+    eventId: 
+  - character: {fileID: 11400000, guid: aade25e9e0058504ba5d3e48c5b88d14, type: 2}
+    spriteId: 
+    characterPosition: 1
+    characterVisible: 1
+    text: "Estabas completamente distra\xEDda y ni siquiera viste el carro."
+    backgroundId: 
+    soundId: 
+    musicId: 
+    eventId: 
+  - character: {fileID: 11400000, guid: 61f72e4213c52644380017b7699e7e8e, type: 2}
+    spriteId: 
+    characterPosition: 0
+    characterVisible: 1
+    text: "Perd\xF3n.\r\nNo estaba prestando atenci\xF3n.\r\n"
+    backgroundId: 
+    soundId: 
+    musicId: 
+    eventId: 
+  - character: {fileID: 11400000, guid: aade25e9e0058504ba5d3e48c5b88d14, type: 2}
+    spriteId: 
+    characterPosition: 1
+    characterVisible: 1
+    text: "Ten m\xE1s cuidado, \xBFs\xED?\r\nPodr\xEDa haber terminado mucho peor.\r\n"
+    backgroundId: 
+    soundId: 
+    musicId: 
+    eventId: 

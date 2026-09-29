@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a087628806101941952608588f1999e, type: 3}
+  m_Name: Choice_06
+  m_EditorClassIdentifier: Assembly-CSharp::ChoiceNode
+  nodeId: Choice_06
+  question: "\xBFC\xF3mo reaccionas luego de la situaci\xF3n?"
+  options:
+  - optionText: Reconocer que tienes problemas en tus habitos.
+    nextNodeId: Dialogue_18
+    variable: 1
+    variableEffect: 5
+    helpProgress: 1
+  - optionText: Negarse y culpar al conductor.
+    nextNodeId: Dialogue_19
+    variable: 1
+    variableEffect: -10
+    helpProgress: 2

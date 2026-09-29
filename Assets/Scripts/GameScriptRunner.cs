@@ -8,22 +8,52 @@ public class GameScriptRunner : MonoBehaviour
 	private GameScriptNode currentNode;
 	private ChoiceUI choiceUI;
 
+	private Transform signalsUI;
+
+	[SerializeField]
+	private CompletionUI completionUI;
+
 	private void Start()
 	{
 		choiceUI = FindFirstObjectByType<ChoiceUI>();
+		completionUI = FindFirstObjectByType<CompletionUI>();
+
+		signalsUI = GameObject.Find("SignalsUI")?.transform;
+
+		if (EventManager.Instance != null)
+		{
+			EventManager.Instance.OnEventRaised += OnEventRaised;
+		}
 
 		StartGameScript();
+	}
+
+	private void OnDestroy()
+	{
+		if (EventManager.Instance != null)
+		{
+			EventManager.Instance.OnEventRaised -= OnEventRaised;
+		}
+
+		if (DialogueManager.Instance != null)
+		{
+			DialogueManager.Instance.OnSequenceCompleted -= OnDialogueCompleted;
+		}
 	}
 
 	public void StartGameScript()
 	{
 		if (gameScript == null)
 		{
-			Debug.LogWarning("[GameScriptRunner] No se asignó un GameScript.");
+			Debug.LogWarning(
+				"[GameScriptRunner] No se asignó un GameScript."
+			);
+
 			return;
 		}
 
-		currentNode = gameScript.GetNodeById(gameScript.startNodeId);
+		currentNode =
+			gameScript.GetNodeById(gameScript.startNodeId);
 
 		if (currentNode == null)
 		{
@@ -31,6 +61,7 @@ public class GameScriptRunner : MonoBehaviour
 				"[GameScriptRunner] No se encontró el nodo inicial: " +
 				gameScript.startNodeId
 			);
+
 			return;
 		}
 
@@ -46,6 +77,14 @@ public class GameScriptRunner : MonoBehaviour
 		else if (currentNode is ChoiceNode choiceNode)
 		{
 			ExecuteChoiceNode(choiceNode);
+		}
+		else if (currentNode is SignalNode signalNode)
+		{
+			ExecuteSignalNode(signalNode);
+		}
+		else if (currentNode is EndNode)
+		{
+			ExecuteEndNode();
 		}
 		else
 		{
@@ -63,19 +102,27 @@ public class GameScriptRunner : MonoBehaviour
 			Debug.LogWarning(
 				"[GameScriptRunner] El DialogueNode no tiene una secuencia de diálogo."
 			);
+
 			return;
 		}
 
+		DialogueManager.Instance.OnSequenceCompleted -= OnDialogueCompleted;
 		DialogueManager.Instance.OnSequenceCompleted += OnDialogueCompleted;
 
-		DialogueManager.Instance.PlaySequence(dialogueNode.dialogueSequence);
+		DialogueManager.Instance.PlaySequence(
+			dialogueNode.dialogueSequence
+		);
 	}
 
 	private void OnDialogueCompleted()
 	{
-		DialogueManager.Instance.OnSequenceCompleted -= OnDialogueCompleted;
+		if (DialogueManager.Instance != null)
+		{
+			DialogueManager.Instance.OnSequenceCompleted -= OnDialogueCompleted;
+		}
 
-		DialogueNode dialogueNode = currentNode as DialogueNode;
+		DialogueNode dialogueNode =
+			currentNode as DialogueNode;
 
 		if (dialogueNode == null)
 			return;
@@ -90,14 +137,17 @@ public class GameScriptRunner : MonoBehaviour
 			Debug.LogWarning(
 				"[GameScriptRunner] No se encontró ChoiceUI en la escena."
 			);
+
 			return;
 		}
 
-		if (choiceNode.options == null || choiceNode.options.Count == 0)
+		if (choiceNode.options == null ||
+			choiceNode.options.Count == 0)
 		{
 			Debug.LogWarning(
 				"[GameScriptRunner] El ChoiceNode no tiene opciones."
 			);
+
 			return;
 		}
 
@@ -114,19 +164,144 @@ public class GameScriptRunner : MonoBehaviour
 	{
 		choiceUI.OnOptionSelected -= OnChoiceSelected;
 
-		ChoiceNode choiceNode = currentNode as ChoiceNode;
+		ChoiceNode choiceNode =
+			currentNode as ChoiceNode;
 
 		if (choiceNode == null)
 			return;
 
-		if (optionIndex < 0 || optionIndex >= choiceNode.options.Count)
+		if (optionIndex < 0 ||
+			optionIndex >= choiceNode.options.Count)
 			return;
 
-		ChoiceOption selectedOption = choiceNode.options[optionIndex];
+		ChoiceOption selectedOption =
+			choiceNode.options[optionIndex];
+
+		if (GameStateManager.Instance != null)
+		{
+			switch (selectedOption.variable)
+			{
+				case StateVariable.EmotionalWellbeing:
+					GameStateManager.Instance.ModifyWellbeing(
+						selectedOption.variableEffect
+					);
+					break;
+
+				case StateVariable.Energy:
+					GameStateManager.Instance.ModifyEnergy(
+						selectedOption.variableEffect
+					);
+					break;
+			}
+
+			if (selectedOption.helpProgress !=
+				HelpProgressStage.None)
+			{
+				GameStateManager.Instance.helpProgress =
+					selectedOption.helpProgress;
+			}
+		}
 
 		choiceUI.Hide();
 
+		StateUI stateUI =
+			FindFirstObjectByType<StateUI>();
+
+		if (stateUI != null)
+		{
+			stateUI.UpdateUI();
+		}
+
+		HelpProgressUI helpProgressUI =
+			FindFirstObjectByType<HelpProgressUI>();
+
+		if (helpProgressUI != null)
+		{
+			helpProgressUI.UpdateUI();
+		}
+
 		GoToNextNode(selectedOption.nextNodeId);
+	}
+
+	private void ExecuteSignalNode(SignalNode signalNode)
+	{
+		if (signalNode.signal == null)
+		{
+			Debug.LogWarning(
+				"[GameScriptRunner] El SignalNode no tiene una señal asignada."
+			);
+
+			return;
+		}
+
+		if (signalsUI == null)
+		{
+			Debug.LogWarning(
+				"[GameScriptRunner] No se encontró SignalsUI en la escena."
+			);
+
+			return;
+		}
+
+		for (int i = 0; i < signalsUI.childCount; i++)
+		{
+			Transform signalObject =
+				signalsUI.GetChild(i);
+
+			SignalTrigger trigger =
+				signalObject.GetComponent<SignalTrigger>();
+
+			if (trigger != null &&
+				trigger.signal == signalNode.signal)
+			{
+				signalObject.gameObject.SetActive(true);
+
+				return;
+			}
+		}
+
+		Debug.LogWarning(
+			"[GameScriptRunner] No se encontró el objeto UI de la señal: " +
+			signalNode.signal.signalId
+		);
+	}
+
+	private void OnEventRaised(string eventId)
+	{
+		if (!(currentNode is SignalNode signalNode))
+			return;
+
+		if (signalNode.signal == null)
+			return;
+
+		string expectedEvent =
+			"SignalActivated_" +
+			signalNode.signal.signalId;
+
+		if (eventId != expectedEvent)
+			return;
+
+		GoToNextNode(signalNode.nextNodeId);
+	}
+
+	private void ExecuteEndNode()
+	{
+		Debug.Log(
+			"[GameScriptRunner] Se alcanzó el final del nivel."
+		);
+
+		if (completionUI == null)
+		{
+			Debug.LogError(
+				"[GameScriptRunner] CompletionUI es NULL."
+			);
+
+			return;
+		}
+
+		completionUI.Show();
+
+		currentNode = null;
 	}
 
 	private void GoToNextNode(string nextNodeId)
@@ -137,7 +312,8 @@ public class GameScriptRunner : MonoBehaviour
 			return;
 		}
 
-		currentNode = gameScript.GetNodeById(nextNodeId);
+		currentNode =
+			gameScript.GetNodeById(nextNodeId);
 
 		if (currentNode == null)
 		{
@@ -152,6 +328,8 @@ public class GameScriptRunner : MonoBehaviour
 	{
 		currentNode = null;
 
-		Debug.Log("[GameScriptRunner] GameScript terminado.");
+		Debug.Log(
+			"[GameScriptRunner] GameScript terminado."
+		);
 	}
 }

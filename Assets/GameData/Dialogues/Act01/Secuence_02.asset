@@ -13,12 +13,57 @@ MonoBehaviour:
   m_Name: Secuence_02
   m_EditorClassIdentifier: Assembly-CSharp::DialogueSequenceSO
   lines:
-  - id: 
-    characterName: NOOOO
-    text: Prueba prueba
-    expression: 
+  - character: {fileID: 11400000, guid: 61f72e4213c52644380017b7699e7e8e, type: 2}
+    spriteId: 
+    characterPosition: 0
+    characterVisible: 0
+    text: "Son las 02:47 AM. Continuas despierto a pesar de sentir sue\xF1o"
     backgroundId: 
     soundId: 
     musicId: 
     eventId: 
-    jumpToId: 
+  - character: {fileID: 11400000, guid: 61f72e4213c52644380017b7699e7e8e, type: 2}
+    spriteId: 
+    characterPosition: 0
+    characterVisible: 1
+    text: "Son las 2:47... Haaah, qu\xE9 tarde se hizo.\n"
+    backgroundId: 
+    soundId: 
+    musicId: 
+    eventId: 
+  - character: {fileID: 11400000, guid: 61f72e4213c52644380017b7699e7e8e, type: 2}
+    spriteId: 
+    characterPosition: 0
+    characterVisible: 1
+    text: "Tengo sue\xF1o... quizas deberia dormir ya"
+    backgroundId: 
+    soundId: 
+    musicId: 
+    eventId: 
+  - character: {fileID: 11400000, guid: 61f72e4213c52644380017b7699e7e8e, type: 2}
+    spriteId: 
+    characterPosition: 0
+    characterVisible: 0
+    text: (Mira nuevamente la pantalla)
+    backgroundId: 
+    soundId: 
+    musicId: 
+    eventId: 
+  - character: {fileID: 11400000, guid: 61f72e4213c52644380017b7699e7e8e, type: 2}
+    spriteId: 
+    characterPosition: 0
+    characterVisible: 1
+    text: Pero este dura poquito.
+    backgroundId: 
+    soundId: 
+    musicId: 
+    eventId: 
+  - character: {fileID: 11400000, guid: 61f72e4213c52644380017b7699e7e8e, type: 2}
+    spriteId: 
+    characterPosition: 0
+    characterVisible: 1
+    text: "Despu\xE9s de este s\xED."
+    backgroundId: 
+    soundId: 
+    musicId: 
+    eventId: 
